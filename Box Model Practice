@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - box model practice</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html> 
+    <head> 
+        <title></title> 
+        <style> 
+            .row {
+                font-weight:bold; 
+                text-align:center;
+                margin: 0 auto;
+                width: 1200px;
+            } 
+          
+            .orange {
+                margin-left: 50px;
+                width: 1200px; 
+                height: 300px; 
+                text-align: center;
+                background-color: #e6641c;
+                margin: 0 auto;
+                margin-bottom: 50px;
+                
+            } 
+          
+            .yellow { 
+                width: 590px;
+                height: 240px; 
+                text-align:center;
+                margin-top: 20px;
+                margin-right: 20px;
+                background-color: #e3be37;
+                float: right;
+            } 
+          
+            .blue { 
+                margin-right:20px;
+                width: 590px; 
+                height: 550px; 
+                text-align:center;
+                float:left;
+                background-color: #06497e;
+            } 
+          
+          .purple-container {
+                width: 590px;
+                text-align: center;
+                float: right;
+                margin-block-start: 0;
+                margin-block-end: 0;
+                padding-inline-start: 0px;
+            
+            } 
+          .purple {
+                margin-bottom: 50px;
+                height: 150px;
+                display: block;
+                border: 0px solid #009900;
+                background-color: #9876bd;
+                padding: 0;
+            
+  
+            } 
+           .teal { 
+                width: 600px; 
+                height: 500px; 
+                text-align:center;
+                margin: 0 auto;
+                background-color: #33a2af;
+            
+            } 
+          
+         
+              
+        </style> 
+    </head> 
+    <body> 
+      
+        <div class= "row">
+          <h1>Box Model Practice</h1>
+          <div class= "orange"> 
+            <div class= "yellow"></div> 
+            
+       </div>
+    <div class= "blue"></div> 
+
+      <ul class="purple-container">
+      <li class="purple"></li> 
+      
+      <li class="purple"></li> 
+      
+      <li class="purple"></li>
+        
+      </ul> 
+          <div style="clear: both;"></div>
+     
+      <div class="teal">
+          </div>
+        
+      </div>
+      
+      </body> 
+      </html>
+<!-- partial -->
+  
+</body>
+</html>
