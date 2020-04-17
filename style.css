@@ -1,88 +1,159 @@
 body {
-  background-color: #3a3535;
-}        
+  background-color: #E3DFDF;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+}
 
-#img-bg {
-            background-position: 30% 20%;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("https://i.ibb.co/FYdrv4w/Screen-Shot-2020-01-21-at-6-02-46-PM.png");
-            background-size: cover;
-            width: 100%;
-            height: 600px;
-        }
-        
-        .header-overlay {
-            width: 25%;
-            float: right;
-            display: block;
-            margin: 5% 7% 10% 0px;
-            vertical-align: middle;
-            color: #ffffff;
-            padding: 30px;
-        }
-        
-        #header-name {
-            font-family: 'Lato', sans-serif;
-            font-weight: 300;
-            font-size: 3.8em;
-            color: #ffffff;
-            text-transform: uppercase;
-            letter-spacing: .1em;
-        }
-        
-        #header-copy {
-            font-family: 'Playfair Display', Baskerville, Times New Roman, serif;
-            font-weight: 300;
-            font-style: italic;
-            font-size: 2.2em;
-            color: #ffffff;
-            display: block;
-        }
-        
-        section {
-            margin: 0 auto;
-            width: 100%;
-            display: block;
-            float: left;
-        }
-        
-        .container {
-            margin: 0 auto;
-            padding: 1% 10% 1% 10%;
-            font-family: 'Lato', Helvetica, Arial, sans-serif;
-            font-weight: 300;
-            color: #ffffff;
-            line-height: 1.7em;
-            font-size: 1.4em;
-        }
-        
-        .bio-text {
-            width: 60%;
-            padding: 0px 15px 0px 0px;
-            float: left;
-        }
-        
-        h1 {
-            font-family: 'Playfair Display', Baskerville, Times New Roman, serif;
-            font-weight: 300;
-            text-transform: uppercase;
-            font-size: 3em;
-            color: #ffffff;
-            letter-spacing: .1em;
-            text-align: center;
-            line-height: 1em;
-        }
-        
+p {
+  color: #2B1803;
+}
 
-        .q {
-            font-weight: bold;
-        }
-        
-        a {
-            color: #ffffff;
-        }
-        
-        a:hover {
-            color: #68654f;
-            text-decoration: none;
-            font-weight: bold;
-        }
+/** LOGO **/
+#logo {
+  margin: 0 auto;
+  padding: 4em;
+  width: 50%;
+  text-align: center;
+}
+
+/** FLEX ROWS **/
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-between;
+    margin: 0 auto;
+    width: 1000px;
+    background: url("https://i.ibb.co/jJp9yn0/Asset-2.png");
+    background-size: object-fit;
+    padding: 2em;
+    border: 2px solid #B6A188;
+    margin-bottom: 4em;
+  }
+
+.column {
+  padding: 1em;
+ 
+}
+
+#pastries {
+  align-items: flex-start;
+}
+
+/** REMOVE BACKGROUND **/
+#pastries, #social, #brand {
+  background: none!important;
+  background-color: transparent!important;
+  border: none;
+}
+
+/** CATERING SECTION **/
+#catering {
+  text-align: left;
+  align-items: flex-start;
+  flex-direction: row-reverse
+}
+
+#catering h1 {
+  text-align: left;
+  text-transform: uppercase;
+  line-height: 2em;
+  
+}
+
+/** IMAGE OVERLAY **/
+.img-wrapper {
+  position: relative;
+  text-align: center;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center; 
+}
+
+/** IMG BORDER **/
+.img-border {
+  border: 2px solid #B6A188;
+}
+
+
+/** BUTTONS **/
+.btn {
+  display: block;
+  text-align: center;
+  color: white;
+  background-color: #534741;
+  border: 0;
+  padding: 10px;
+  margin: 1em;
+  font-size: 1em;
+  margin: 0 auto;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.left {
+  margin-left: 0px;
+  text-align: left;
+}
+ 
+/** HEADLINES **/
+h1 {
+  color: #2B1803;
+  text-align: center;
+  font-size: 2em;
+  line-height: 1.2em;
+}
+
+h2 {
+  color:#2B1803;
+  font-size: 20px;
+}
+
+h3 {
+  color:#2B1803;
+  font-size: 16px;
+}
+
+#about {
+  text-align: center;
+  align-items: flex-start;
+}
+
+#about > .column:nth-of-type(2) {flex-basis: 45%}
+
+/** FOOTER **/
+.hr {
+  flex-basis: 40%;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #333;
+}
+
+/** SOCIAL **/
+
+#social {
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.fab {
+  color: #2B1803;}
+
+
+.fa-circle {
+  color: #ffffff;}
+
+#phone{
+  justifty-content: center;
+}
